@@ -7,7 +7,7 @@ package com.mycompany.simuduck;
 
 /**
  *
- * @author oem
+ * @author eduardo
  */
 public class FlyWithWings implements FlyBehavior{
     

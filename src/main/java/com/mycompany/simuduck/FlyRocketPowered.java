@@ -7,14 +7,12 @@ package com.mycompany.simuduck;
 
 /**
  *
- * @author oem
+ * @author eduardo
  */
-public class MiniDucksSimulatior {
-    public static void main(String[] args) {
-        Duck mallard = new MallardDuck();
-        
-        mallard.performFly();
-        mallard.performQuack();
-        
+public class FlyRocketPowered implements FlyBehavior {
+    
+    public void fly() {
+        System.out.println("I'm flying with a rocket!");
     }
+    
 }

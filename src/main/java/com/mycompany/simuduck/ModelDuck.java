@@ -9,10 +9,16 @@ package com.mycompany.simuduck;
  *
  * @author eduardo
  */
-public class Squeack implements QuackBehavior{
+public class ModelDuck  extends Duck {
     
-    public void quack() {
-        System.out.println("Squeack!");
+    public ModelDuck() {
+        flyBehavior = new FlyNoWay();
+        quackBehavior = new Quack();
+    }
+    
+    @Override
+    public void display() {
+        System.out.println("I'm a model duck!");
     }
     
 }
